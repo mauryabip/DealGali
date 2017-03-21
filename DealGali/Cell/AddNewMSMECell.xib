@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddCell" id="KGk-i7-Jjw" customClass="AddNewMSMECell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dottedcircle120.png" translatesAutoresizingMaskIntoConstraints="NO" id="3g8-or-H1w">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="5JB-qn-xDG"/>
+                            <constraint firstAttribute="width" constant="60" id="RpF-5M-63q"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQQ-HC-y7D">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="vV0-qY-D2k"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KQQ-HC-y7D" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.73" id="2ZR-o2-mXD"/>
+                    <constraint firstItem="3g8-or-H1w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="Te8-sn-Vqd"/>
+                    <constraint firstItem="3g8-or-H1w" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Vfa-UJ-t2H"/>
+                    <constraint firstItem="KQQ-HC-y7D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="17" id="nLX-Kp-GzC"/>
+                    <constraint firstItem="KQQ-HC-y7D" firstAttribute="leading" secondItem="3g8-or-H1w" secondAttribute="trailing" constant="8" id="rgh-js-mAW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="3g8-or-H1w" id="0Dc-WQ-q2T"/>
+                <outlet property="titleLbl" destination="KQQ-HC-y7D" id="ezA-EJ-acg"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dottedcircle120.png" width="120" height="120"/>
+    </resources>
+</document>
